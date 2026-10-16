@@ -1,0 +1,339 @@
+
+/* =========================================
+   LUCYN TCL — PARTNERS PAGE
+========================================= */
+
+.partners-page {
+    --partners-ink: #101828;
+    --partners-blue: #0875f9;
+    --partners-muted: #737d8c;
+    --partners-border: #e8ebef;
+
+    min-height: 100vh;
+    background: #fff;
+    color: var(--partners-ink);
+}
+
+/* HEADER */
+
+/* =========================================
+   CENTRED HERO
+========================================= */
+
+.partners-hero {
+    width: min(100% - 48px, 1100px);
+    min-height: 470px;
+    margin-inline: auto;
+    padding: 100px 0 86px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.partners-eyebrow {
+    display: inline-block;
+    margin-bottom: 25px;
+
+    color: var(--partners-blue);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .17em;
+}
+
+.partners-hero h1 {
+    max-width: 1000px;
+    margin: 0;
+
+    color: var(--partners-ink);
+    font-size: clamp(44px, 6.2vw, 76px);
+    font-weight: 650;
+    line-height: 1.08;
+    letter-spacing: -.065em;
+}
+
+.partners-hero h1 span {
+    color: var(--partners-blue);
+}
+
+.partners-hero-description {
+    margin: 25px 0 0;
+
+    color: var(--partners-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.partners-hero-line {
+    width: 38px;
+    height: 3px;
+    margin-top: 35px;
+
+    background: var(--partners-blue);
+}
+
+/* =========================================
+   PARTNERSHIP DETAILS
+   LEFT: CTA
+   RIGHT: EXPLANATION
+========================================= */
+
+.partners-details {
+    width: min(100% - 96px, 1120px);
+    margin-inline: auto;
+    padding: 58px 0 86px;
+
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: clamp(55px, 9vw, 130px);
+    align-items: start;
+
+    border-top: 1px solid var(--partners-border);
+}
+
+/* Left column */
+
+.partners-action {
+    padding-top: 4px;
+}
+
+.partners-section-label,
+.partners-section-number {
+    display: block;
+
+    color: var(--partners-blue);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+}
+
+.partners-action h2 {
+    margin: 22px 0 30px;
+
+    color: var(--partners-ink);
+    font-size: clamp(29px, 3.2vw, 40px);
+    font-weight: 650;
+    line-height: 1.15;
+    letter-spacing: -.045em;
+}
+
+/* CTA */
+
+.partners-cta {
+    width: fit-content;
+    min-height: 50px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    border-radius: 4px;
+    border: 1px solid var(--partners-blue);
+
+    background: var(--partners-blue);
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.partners-cta:hover {
+    background: #0665d8;
+    border-color: #0665d8;
+}
+
+.partners-cta-arrow {
+    font-size: 18px;
+    transition: transform .2s ease;
+}
+
+.partners-cta:hover .partners-cta-arrow {
+    transform: translate(3px, -3px);
+}
+
+/* Right column */
+
+.partners-explanation {
+    max-width: 570px;
+}
+
+.partners-section-number {
+    margin-bottom: 25px;
+    color: var(--partners-muted);
+    font-size: 9px;
+}
+
+.partners-lead {
+    margin: 0 0 22px;
+
+    color: var(--partners-ink);
+    font-size: clamp(21px, 2.3vw, 27px);
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: -.025em;
+}
+
+.partners-description {
+    margin: 0 0 17px;
+
+    color: var(--partners-muted);
+    font-size: 13px;
+    line-height: 1.95;
+}
+
+.partners-description:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.partners-footer {
+    width: min(100% - 96px, 1240px);
+    min-height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-top: 1px solid var(--partners-border);
+
+    color: var(--partners-muted);
+    font-size: 10px;
+}
+
+.partners-footer-note {
+    letter-spacing: .035em;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+    .partners-header,
+    .partners-details,
+    .partners-footer {
+        width: calc(100% - 56px);
+    }
+
+    .partners-hero {
+        min-height: 410px;
+        padding: 80px 0 70px;
+    }
+
+    .partners-details {
+        grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+        gap: 40px;
+        padding: 45px 0 65px;
+    }
+
+    .partners-action h2 {
+        font-size: 30px;
+    }
+
+    .partners-cta {
+        gap: 14px;
+        padding-inline: 14px;
+        font-size: 11px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+    .partners-hero {
+        width: calc(100% - 36px);
+        min-height: auto;
+        padding: 82px 0 70px;
+    }
+
+    .partners-eyebrow {
+        margin-bottom: 22px;
+    }
+
+    .partners-hero h1 {
+        font-size: clamp(39px, 10vw, 54px);
+        line-height: 1.08;
+        letter-spacing: -.06em;
+    }
+
+    .partners-hero-description {
+        max-width: 310px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .partners-hero-line {
+        margin-top: 27px;
+    }
+
+    .partners-details {
+        grid-template-columns: 1fr;
+        gap: 42px;
+        padding: 34px 0 52px;
+    }
+
+    .partners-action h2 {
+        margin: 17px 0 22px;
+        font-size: 31px;
+    }
+
+    .partners-cta {
+        width: 35;
+        min-height: 50px;
+        padding-inline: 16px;
+        font-size: 13px;
+    }
+
+    .partners-explanation {
+        max-width: none;
+    }
+
+    .partners-section-number {
+        margin-bottom: 18px;
+    }
+
+    .partners-lead {
+        font-size: 23px;
+    }
+
+    .partners-description {
+        font-size: 12px;
+        line-height: 1.9;
+    }
+
+    .partners-footer {
+        min-height: 65px;
+        font-size: 9px;
+    }
+
+    .partners-footer-note {
+        max-width: 135px;
+        text-align: right;
+        line-height: 1.6;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .partners-header-link,
+    .partners-cta,
+    .partners-cta-arrow {
+        transition: none;
+    }
+}

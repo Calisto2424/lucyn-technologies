@@ -1,0 +1,371 @@
+
+/* ==========================
+   ABOUT PAGE
+========================== */
+
+.about-hero {
+    min-height: 430px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #ffffff;
+    color: #0c1718;
+}
+
+.about-hero-image {
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/tec.png");
+    background-size: cover;
+    background-position: center 48%;
+    transform: scale(1.01);
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+   
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(1140px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 76px 0 86px;
+}
+
+.eyebrow {
+    display: block;
+    margin-bottom: 18px;
+    color: #0875f9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.light-eyebrow {
+    color: #9bc5ff;
+}
+
+.about-hero-content h1 {
+    max-width: 650px;
+    margin: 0 0 20px;
+    color: #050505;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.8px;
+}
+
+.about-hero-content > p {
+    max-width: 480px;
+    margin: 0 0 28px;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 14px 21px;
+    border: 0;
+    border-radius: 8px;
+    background: #0875f9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button-primary:hover {
+    background: #0063dd;
+    transform: translateY(-2px);
+}
+
+.hero-caption {
+    position: absolute;
+    right: max(24px, calc((100% - 1140px) / 2));
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+}
+
+.caption-line {
+    width: 25px;
+    height: 2px;
+    background: #0875f9;
+}
+
+/* Shared section layout */
+
+.section-pad {
+    padding: 88px max(24px, calc((100% - 1140px) / 2));
+}
+
+.section-intro h2,
+.solutions-copy h2,
+.partnership-copy h2,
+.approach-heading h2 {
+    margin: 0 0 20px;
+    color: #101828;
+    font-size: clamp(29px, 3.5vw, 40px);
+    line-height: 1.18;
+    letter-spacing: -1.1px;
+}
+
+.section-intro > p,
+.solutions-copy > p,
+.partnership-copy > p,
+.approach-heading > p {
+    color: #737d8c;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* Challenge section */
+
+.challenge-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 90px;
+    background: #fff;
+}
+
+.section-intro > p {
+    max-width: 430px;
+}
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 28px;
+}
+
+.challenge-card h3 {
+    margin: 15px 0 8px;
+    color: #101828;
+    font-size: 15px;
+}
+
+.challenge-card p {
+    margin: 0;
+    color: #737d8c;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.feature-icon {
+    display: grid;
+    width: 46px;
+    height: 46px;
+    place-items: center;
+    border-radius: 14px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.blue-icon {
+    background: #eaf3ff;
+    color: #0875f9;
+}
+
+.purple-icon {
+    background: #f1eaff;
+    color: #8655ee;
+}
+
+.orange-icon {
+    background: #fff0df;
+    color: #e98221;
+}
+
+.green-icon {
+    background: #e2f7ed;
+    color: #15966a;
+}
+
+/* Solutions section */
+
+.solutions-section {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 0.65fr;
+    align-items: center;
+    gap: 30px;
+    background: #f5f8fd;
+}
+
+.solutions-visual {
+    min-width: 0;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.solutions-visual img,
+.partnership-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.solutions-copy .button-primary {
+    margin-top: 10px;
+}
+
+.solutions-facts {
+    display: grid;
+    gap: 22px;
+    padding-left: 24px;
+    border-left: 1px solid #d9e2ef;
+}
+
+.solutions-facts > span {
+    color: #737d8c;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.solutions-facts strong {
+    color: #101828;
+    font-size: 16px;
+}
+
+.solutions-facts p {
+    margin: 6px 0 0;
+    color: #737d8c;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* Partnership */
+
+.partnership-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    background: #fff;
+}
+
+.partnership-image {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.text-link {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 12px;
+    color: #0875f9;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: #0056c9;
+}
+
+/* Four-step approach */
+
+.approach-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    align-items: start;
+    gap: 70px;
+    background: #f5f8fd;
+}
+
+.approach-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #e3efff;
+    color: #0875f9;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.approach-step:nth-child(2) .step-number {
+    background: #eee7ff;
+    color: #8051e8;
+}
+
+.approach-step:nth-child(3) .step-number {
+    background: #fff0df;
+    color: #e98221;
+}
+
+.approach-step:nth-child(4) .step-number {
+    background: #e1f6eb;
+    color: #15966a;
+}
+
+.approach-step h3 {
+    margin: 0 0 9px;
+    color: #101828;
+    font-size: 15px;
+}
+
+.approach-step p {
+    margin: 0;
+    color: #737d8c;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+/* Final CTA */
+
+.about-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 65px max(24px, calc((100% - 1140px) / 2));
+    background: #fdfdfd;
+    color: #fff;
+}
+
+.about-cta h2 {
+    margin: 0 0 13px;
+    color: #000000;
+    font-size: clamp(28px, 3.5vw, 38px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.about-cta p {
+    margin: 0;
+    color: #c2cde0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.cta-button {
+    flex-shrink: 0;
+}
+
