@@ -1,0 +1,189 @@
+
+.lucyn-consent {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  color: #172033;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -8px 32px rgb(15 23 42 / 8%);
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lucyn-consent[hidden] {
+  display: none;
+}
+
+.lucyn-consent__content {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(280px, 1.4fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.lucyn-consent__heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lucyn-consent__mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #edf4ff;
+  color: #174ea6;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.lucyn-consent h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.lucyn-consent__brand {
+  margin: 3px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.lucyn-consent__description {
+  margin: 0;
+  color: #536174;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.lucyn-consent a {
+  color: #174ea6;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lucyn-consent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.lucyn-consent button {
+  min-height: 42px;
+  padding: 10px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lucyn-consent button[data-consent="accept"],
+#lucyn-save {
+  background: #174ea6;
+  border-color: #174ea6;
+  color: #fff;
+}
+
+.lucyn-consent button:hover,
+.lucyn-consent button:focus-visible {
+  outline: 2px solid #93b4ef;
+  outline-offset: 2px;
+}
+
+.lucyn-consent__dialog {
+  width: min(440px, calc(100% - 32px));
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  color: #172033;
+  box-shadow: 0 20px 60px rgb(15 23 42 / 20%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lucyn-consent__dialog::backdrop {
+  background: rgb(15 23 42 / 40%);
+}
+
+.lucyn-consent__settings h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.lucyn-consent__settings p {
+  color: #536174;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.lucyn-consent__settings label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.lucyn-consent__settings input {
+  width: 17px;
+  height: 17px;
+}
+
+.lucyn-consent__settings .lucyn-consent__actions {
+  margin-top: 20px;
+}
+
+@media (max-width: 850px) {
+  .lucyn-consent__content {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .lucyn-consent {
+    padding: 20px;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .lucyn-consent__actions button {
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .lucyn-consent {
+    padding: 16px;
+  }
+
+  .lucyn-consent__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lucyn-consent__actions button:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+
+
+.lucyn-consent__logo {
+  display: block;
+  width: 110px;
+  height: 42px;
+  object-fit: contain;
+  object-position: left center;
+}

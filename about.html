@@ -2,15 +2,7 @@
 <html lang="pt-MZ">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4KGJCHJLN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-Y4KGJCHJLN');
-    </script>
 
     <!--Google Adsence-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9162851282277048"
@@ -61,6 +53,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lucyn.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/consent.css">
 
     <!-- Activar efeitos dependentes de JavaScript antes do CSS -->
     <script>
@@ -380,8 +373,20 @@
         </div>
 
         <div class="container footer-bottom">
-            <p>© <span id="current-year"></span> Lucyn Technologies. Todos os direitos reservados.</p>
-            <a href="#" class="footer-back-top">Voltar ao topo <span>↑</span></a>
+            <p>
+                © <span id="current-year"></span> Lucyn Technologies.
+                Todos os direitos reservados.
+            </p>
+
+            <nav class="footer-legal" aria-label="Informações legais">
+                <a href="policy.html" footer-legal-link">
+                    Política de Privacidade
+                </a>
+            </nav>
+
+            <a href="#" class="footer-back-top">
+                Voltar ao topo <span>↑</span>
+            </a>
         </div>
 
     </footer>
@@ -453,7 +458,11 @@
         </button>
 
     </div>
+    <script src="js/consent.js"></script>
 
+    <button type="button" onclick="window.LucynConsent.reopen()">
+        Preferências de cookies
+    </button>
 </body>
 
 </html>
