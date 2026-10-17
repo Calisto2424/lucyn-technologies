@@ -1,0 +1,8 @@
+
+# Lucyn TCL
+# Website oficial: https://lucyn-tcl.com/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://lucyn-tcl.com/sitemap.xml
