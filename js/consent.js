@@ -35,7 +35,7 @@
         Utilizamos cookies de análise para compreender como os
         visitantes utilizam o nosso site e melhorar os nossos serviços.
         Pode aceitar, rejeitar ou personalizar as suas preferências.
-        <a href="/privacy/">Política de privacidade</a>.
+        <a href="policy.html">Política de privacidade</a>.
       </p>
 
       <div class="lucyn-consent__actions">
