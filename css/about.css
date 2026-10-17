@@ -9,16 +9,16 @@
     align-items: center;
     min-height: 430px;
     overflow: hidden;
-    background: #fff;
+    background: #ffffff48;
     color: #0c1718;
 }
 
 .about-hero-image {
     position: absolute;
     inset: 0;
-    background-image: url("../assets/tec.png");
+    background-image: url("../assets/capa.webp");
     background-size: cover;
-    background-position: center 48%;
+    background-position: center 35%;
 }
 
 .about-hero-overlay {
