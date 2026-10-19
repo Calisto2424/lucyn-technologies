@@ -1,7 +1,4 @@
 
-// Current year
-document.getElementById("currentYear").textContent =
-    new Date().getFullYear();
 
 // Render Lucide icons
 if (window.lucide) {
